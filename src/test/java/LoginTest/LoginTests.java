@@ -13,7 +13,6 @@ public class LoginTests extends BaseTests {
       authPage.setEmailAddressLogin(email);
       authPage.setPasswordLogin(password);
       MyAccountPage accountPage =  authPage.loginButton();
-        assertEquals(accountPage.checkForLoginPage(),"Sign out" +
-                "");
+        assertEquals(accountPage.checkForLoginPage(),"Sign out");
     }
 }
